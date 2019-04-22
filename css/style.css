@@ -1,0 +1,264 @@
+*{
+  margin: 0px;
+  padding: 0px; 
+  
+}
+
+.back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:linear-gradient(to right, #dcdd99 0%, #dee2e2 80%);
+  z-index: -3;
+}
+
+.table{
+  width: 100%;
+  height: 150px;
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  background:linear-gradient(to bottom, #7c5c34 0%, #d69f57 70%);
+}
+
+.middle{
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  background: #f4df22;
+  left: 400px;
+  bottom: 30px;
+  border-radius: 25%;
+  z-index: 1;
+}
+.middle:before{
+  content:'';
+  background: #0c6da0;
+  width: 162px;
+  height:50px;
+  position: absolute;
+  top:-50px;
+  right: 70px;
+  border-top-left-radius: 100% 32px;
+  border-top-right-radius: 100% 30px;
+}
+
+.headd{
+  position: absolute;
+  width: 35px;
+  height: 190px;
+  background: #c8cdd1;
+  left: 130px;
+  top: -180px; 
+  z-index: -3;
+  animation-name: elevatorgo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.headd:before{
+  content:'';
+  background: #0c6da0;
+  width: 180px;
+  height:50px;
+  position: absolute;
+  top:0px;
+  left: -30px;
+  border-top-left-radius: 100% 32px;
+  border-top-right-radius: 100% 30px;
+}
+
+
+.yellow{
+  position: absolute;
+  width: 160px;
+  height: 350px;
+  left: 70px;
+  top: 0px;
+  background:#c6b627;
+  z-index: 3;
+}
+.yellow:before{
+  content:'';
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 60px;
+  right: -20px;
+  border-radius:50%;
+  background:#0c6da0;
+}
+.yellow:after{
+  content:'';
+  width: 305px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  right: -70px;
+  background:#0c6da0;
+}
+.haa{
+  width:50px;
+  height: 200px;
+  
+}
+
+.bubble:hover{
+  width: 100px;
+  height: 100px;
+  margin-top: -200px;
+  margin-left: -80px;
+}
+
+.bubble{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background:linear-gradient(to bottom, #b7f4eb 0%, #76d6db 80%);
+  left: 260px;
+  top: -130px;
+  border-radius: 50%;
+  animation-name: bubble; 
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.b1{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background:linear-gradient(to bottom, #b7f4eb 0%, #76d6db 80%);
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+  animation-name: b1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.b2{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background:linear-gradient(to bottom, #b7f4eb 0%, #76d6db 80%);
+  position: absolute;
+  right: 240px;
+  bottom: 40px;
+  animation-name: b2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.b3{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  background:linear-gradient(to bottom, #b7f4eb 0%, #76d6db 80%);
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  animation-name: b3;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes elevatorgo{
+  0% {
+    left: 130px;
+    top: -180px;
+  }
+  100% {
+    left: 130px;
+    top: -130px; 
+   
+  }
+}
+
+ @keyframes bubble{ 
+  0%{
+    left: 260px;
+    top: -130px;
+  }
+  
+  100%{
+    top: -90px;
+    width: 130px;
+    height: 130px;
+  } 
+}
+
+@keyframes b1{
+  0%{
+    left: 200px;
+    bottom: 180px;
+    width:0px;
+    height: 0px;
+  }
+  30%{
+    left: 280px;
+    bottom: 300px;
+    width:80px;
+    height: 80px;
+  }
+  50%{
+    left: 200px;
+  bottom: 400px;
+  }
+  100%{
+    left: 480px;
+    bottom: 500px;
+    width:0px;
+    height: 0px;
+  } 
+}
+
+@keyframes b2{
+  0%{
+    right: 240px;
+    bottom: 180px;
+    width:0px;
+    height: 0px;
+  }
+  40%{
+    right: 80px;
+    bottom: 250px;
+    width:100px;
+    height: 100px;
+  }
+  70%{
+    right: 100px;
+    bottom: 500px;
+  }
+  100%{
+    right: 150px;
+    bottom: 800px;
+    width:0px;
+    height: 0px;
+  } 
+}
+
+@keyframes b3{
+  0%{
+    right: 240px;
+    bottom: 200px;
+    width:0px;
+    height: 0px;
+  }
+  50%{
+    right: 80px;
+    bottom: 250px;
+    width:50px;
+    height: 50px;
+  }
+  80%{
+    right: 100px;
+    bottom: 500px;
+  }
+  100%{
+    right: 150px;
+    bottom: 800px;
+    width:0px;
+    height: 0px;
+  } 
+}
